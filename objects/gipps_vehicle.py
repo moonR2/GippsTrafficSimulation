@@ -42,7 +42,6 @@ class Gipps_vehicle(Vehicle):
         return pick 
         
     def update(self):
-        self.base_update()
         self.list_update()
         if self.suddenBraking:
             new_acceleration = self.desired_braking

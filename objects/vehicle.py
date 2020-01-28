@@ -13,7 +13,6 @@ class Vehicle:
         self.acceleration = 0 # Acceleration (m/s)
         self.speed = 0 # Speed (m/s)
         self.headway = 0 # Headway (s)
-        self.records = {} # Dictionary to save car information 
         self.lrecords = []
         self.ltime = []
         self.follower = None # Set follower vehicle 
@@ -40,13 +39,13 @@ class Vehicle:
             difference = (self.location - self.init_location)
             return (self.simTime / 1000 - difference / self.max_speed) / (difference/1000)
 
-    # Try to use another data structure
+    # Now the info is working with lists instead of dictionaries 
     def infoToLists(self):
         self.headway = 0 
         if self.leader and self.speed > 0: 
             self.headway = (self.leader.location - self.location) / self.speed
 
-        self.lrecords.append(list(map(lambda x: round(x,4),[self.acceleration, self.speed, self.location])))
+        self.lrecords.append(list(map(lambda x: round(x,4),[self.acceleration, self.speed, self.location, self.headway])))
         self.ltime.append(self.simTime)
 
         self.simTime += self.simulationStep
@@ -64,29 +63,4 @@ class Vehicle:
             self.headway_pass_zero = self.headway
             self.speed_pass_zero = self.speed
 
-    def InfoToDictionary(self):
-        self.headway = 0 
-        if self.leader and self.speed > 0: 
-            self.headway = (self.leader.location - self.location) / self.speed 
-
-        #List with vehicle data 
-        records = [self.acceleration, self.speed, self.location, self.headway]
-
-        #Round records to 4 decimals
-        self.records[self.simTime] = list(
-            map(lambda x: round(x,4), records))
-
-        
-
-    def base_update(self): 
-        self.InfoToDictionary()
-        
-        if self.leader:
-            spacing = self.leader.location - self.location - self.leader.length
-            if spacing <= 0:
-                print("Vehicle: ", self.ith, "has crashed LoL")
-        
-        if self.time_pass_zero == None and self.location >= 0:
-            self.time_pass_zero = self.simTime
-            self.headway_pass_zero = self.headway
-            self.speed_pass_zero = self.speed
+   
