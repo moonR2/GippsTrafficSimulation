@@ -1,5 +1,5 @@
 class Vehicle:
-    def __init__(self, ith, leader, simulationStep, max_speed, length, miniGap):
+    def __init__(self, ith, leader,y_location, simulationStep, max_speed, length, miniGap):
         self.ith = ith # The itg vehicle in the queue
         self.set_leader(leader) 
         self.max_speed = max_speed
@@ -20,6 +20,13 @@ class Vehicle:
         self.time_pass_zero = None 
         self.headway_pass_zero = None 
         self.speed_pass_zero = None 
+        self.y_location = y_location 
+        #From here test attributes for pygame animation
+        # Comment the following lines to run, run.py 
+        self.position = []
+        self.angle = 0.0
+        self.max_steering = 30 
+        self.steering = 0.0 
 
     def set_leader(self, leader): 
         self.leader = leader 
@@ -33,6 +40,9 @@ class Vehicle:
     
     def start_sudden_braking(self):
         self.suddenBraking = True
+
+    def stop_sudden_braking(self):
+        self.suddenBraking = False
     
     def calc_delay(self):
         if self.location > 0: 
@@ -46,7 +56,8 @@ class Vehicle:
             self.headway = (self.leader.location - self.location) / self.speed
 
         self.lrecords.append(list(map(lambda x: round(x,4),[self.acceleration, self.speed, self.location, self.headway])))
-        self.ltime.append(self.simTime)
+        self.ltime.append(round(self.simTime/1000,2))
+        self.position.append([self.location,self.y_location]) 
 
         self.simTime += self.simulationStep
 
