@@ -1,63 +1,74 @@
+import numpy as np
 class Vehicle:
-    def __init__(self, ith, leader,y_location, simulationStep, max_speed, length, miniGap):
-        self.ith = ith # The itg vehicle in the queue
-        self.set_leader(leader) 
+    def __init__(
+        self, ith, leader, simulationStep, max_speed, length, miniGap
+    ):
+        self.ith = ith  # The itg vehicle in the queue
+        self.set_leader(leader)
         self.max_speed = max_speed
-        self.length = length # lenght of the vehicle 
-        self.miniGap = miniGap # the min gap between vehicles 
-        self.simulationStep = simulationStep # simulation step (ms)
-        self.simTime = 0 # Simulation start time (ms)
-        self.suddenBraking = False # Should the vehicle brake? 
-        self.location = self.calc_location() # Actual location of the vehicle 
-        self.init_location = self.calc_location() # Initial location of the vehicle
-        self.acceleration = 0 # Acceleration (m/s)
-        self.speed = 0 # Speed (m/s)
-        self.headway = 0 # Headway (s)
+        self.length = length  # lenght of the vehicle
+        self.miniGap = miniGap  # the min gap between vehicles
+        self.simulationStep = simulationStep  # simulation step (ms)
+        self.simTime = 0  # Simulation start time (ms)
+        self.suddenBraking = False  # Should the vehicle brake?
+        self.location = self.calc_location()  # Actual location of the vehicle
+        self.y_location = self.calc_location()
+        self.init_location = self.calc_location()  # Initial location of the vehicle
+        self.bi_location = np.array([self.location, self.y_location])
+        self.acceleration = 0  # Acceleration (m/s)
+        self.speed = 0  # Speed (m/s)
+        self.headway = 0  # Headway (s)
         self.lrecords = []
         self.ltime = []
-        self.follower = None # Set follower vehicle 
-        self.prev_location = 0 # Vehicle previous location 
-        self.time_pass_zero = None 
-        self.headway_pass_zero = None 
-        self.speed_pass_zero = None 
-        self.y_location = y_location 
-        #From here test attributes for pygame animation
-        # Comment the following lines to run, run.py 
+        self.follower = None  # Set follower vehicle
+        self.prev_location = 0  # Vehicle previous location
+        self.time_pass_zero = None
+        self.headway_pass_zero = None
+        self.speed_pass_zero = None
         self.position = []
-        self.angle = 0.0
-        self.max_steering = 30 
-        self.steering = 0.0 
+        self.angle = 90.0
 
-    def set_leader(self, leader): 
-        self.leader = leader 
+    def set_leader(self, leader):
+        self.leader = leader
         if leader:
-            leader.follower = self 
+            leader.follower = self
 
+    # Compute the initial position of the vehicles
     def calc_location(self):
-        if self.leader: 
+        # Trusty values
+        if self.leader:
             return self.leader.location - self.miniGap - self.leader.length
-        return 0 
-    
+        return 0
+
     def start_sudden_braking(self):
         self.suddenBraking = True
 
     def stop_sudden_braking(self):
         self.suddenBraking = False
-    
-    def calc_delay(self):
-        if self.location > 0: 
-            difference = (self.location - self.init_location)
-            return (self.simTime / 1000 - difference / self.max_speed) / (difference/1000)
 
-    # Now the info is working with lists instead of dictionaries 
+    def calc_delay(self):
+        if self.location > 0:
+            difference = self.location - self.init_location
+            return (self.simTime / 1000 - difference / self.max_speed) / (
+                difference / 1000
+            )
+
+    # Now the info is working with lists instead of dictionaries
     def infoToLists(self):
-        self.headway = 0 
-        if self.leader and self.speed > 0: 
+        self.headway = 0
+        if self.leader and self.speed > 0:
             self.headway = (self.leader.location - self.location) / self.speed
 
-        self.lrecords.append(list(map(lambda x: round(x,4),[self.acceleration, self.speed, self.location, self.headway])))
-        self.ltime.append(round(self.simTime/1000,2))
-        self.position.append([self.location,self.y_location]) 
+        self.lrecords.append(
+            list(
+                map(
+                    lambda x: round(x, 4),
+                    [self.acceleration, self.speed, self.location, self.headway],
+                )
+            )
+        )
+        self.ltime.append(round(self.simTime / 1000, 2))
+        self.position.append(self.bi_location)
 
         self.simTime += self.simulationStep
 
@@ -69,9 +80,7 @@ class Vehicle:
             if spacing <= 0:
                 print("Vehicle has crashed", self.ith)
 
-        if self.time_pass_zero == None and self.location >= 0: 
+        if self.time_pass_zero == None and self.location >= 0:
             self.time_pass_zero = self.simTime
             self.headway_pass_zero = self.headway
             self.speed_pass_zero = self.speed
-
-   
