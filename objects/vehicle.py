@@ -1,7 +1,8 @@
 import numpy as np
+from copy import deepcopy
 class Vehicle:
     def __init__(
-        self, ith, leader, simulationStep, max_speed, length, miniGap
+        self, ith, leader, simulationStep, max_speed, length, miniGap, path
     ):
         self.ith = ith  # The itg vehicle in the queue
         self.set_leader(leader)
@@ -12,7 +13,7 @@ class Vehicle:
         self.simTime = 0  # Simulation start time (ms)
         self.suddenBraking = False  # Should the vehicle brake?
         self.location = self.calc_location()  # Actual location of the vehicle
-        self.y_location = self.calc_location()
+        self.y_location = 0
         self.init_location = self.calc_location()  # Initial location of the vehicle
         self.bi_location = np.array([self.location, self.y_location])
         self.acceleration = 0  # Acceleration (m/s)
@@ -26,7 +27,9 @@ class Vehicle:
         self.headway_pass_zero = None
         self.speed_pass_zero = None
         self.position = []
-        self.angle = 90.0
+        self.angle = 0.0
+        self.path = deepcopy(path)
+
 
     def set_leader(self, leader):
         self.leader = leader

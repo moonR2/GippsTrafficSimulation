@@ -1,0 +1,1713 @@
+0
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('a', 'b')
+(50, 0)
+(50, 130)
+90.0
+1
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('b', 'c')
+(50, 130)
+(180, 130)
+0.0
+2
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('c', 'd')
+(180, 130)
+(180, 0)
+-90.0
+3
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('d', 'a')
+(180, 0)
+(50, 0)
+180.0
+4
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('e', 'd')
+(310, 0)
+(180, 0)
+180.0
+5
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('f', 'e')
+(310, 130)
+(310, 0)
+-90.0
+6
+Nodes:  {'a': (50, 0), 'b': (50, 130), 'c': (180, 130), 'd': (180, 0), 'e': (310, 0), 'f': (310, 130)}
+('c', 'f')
+(180, 130)
+(310, 130)
+0.0
+Here: 7
+Here: 7
+Here: 7
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [0 0]
+Distance: 50.0
+v_free 0.44798933519052037
+Loc_Magnitude: 0.1493297783968401
+<class 'numpy.ndarray'>
+Next location: [0.14932978 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [-7 -7]
+Distance: 57.42821606144492
+V_vector:  [0.85846663 0.69154489]
+V_free: 0.44798933519052037
+V_follow:  0.8584666311304052
+Loc_Magnitude: -6.85067022160316
+<class 'numpy.ndarray'>
+Next location: [-6.85067022 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-14 -14]
+Distance: 65.5133574166368
+V_vector:  [0.85846663 5.24006469]
+V_free: 0.44798933519052037
+V_follow:  0.8584666311304052
+Loc_Magnitude: -13.85067022160316
+<class 'numpy.ndarray'>
+Next location: [-13.85067022  -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [0.14932978 0.        ]
+Distance: 49.85067022
+v_free 1.0510289306192975
+Loc_Magnitude: 0.6490025352699392
+<class 'numpy.ndarray'>
+Next location: [0.64900254 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [-6.85067022 -0.        ]
+Distance: 56.85067022
+V_vector:  [1.21094936 0.        ]
+V_free: 1.0510289306192975
+V_follow:  1.2109493600088523
+Loc_Magnitude: -6.35099746473006
+<class 'numpy.ndarray'>
+Next location: [-6.35099746 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-13.85067022  -0.        ]
+Distance: 63.85067022
+V_vector:  [1.21094936 0.        ]
+V_free: 1.0510289306192975
+V_follow:  1.2109493600088523
+Loc_Magnitude: -13.35099746473006
+<class 'numpy.ndarray'>
+Next location: [-13.35099746  -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [0.64900254 0.        ]
+Distance: 49.35099746
+v_free 1.7985927246844566
+Loc_Magnitude: 1.5988764251012513
+<class 'numpy.ndarray'>
+Next location: [1.59887643 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [-6.35099746 -0.        ]
+Distance: 56.35099746
+V_vector:  [1.73979153 0.        ]
+V_free: 1.7985927246844566
+V_follow:  1.7397915276939147
+Loc_Magnitude: -5.420723973895596
+<class 'numpy.ndarray'>
+Next location: [-5.42072397 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-13.35099746  -0.        ]
+Distance: 63.35099746
+V_vector:  [1.69532267 0.        ]
+V_free: 1.7985927246844566
+V_follow:  1.695322667855316
+Loc_Magnitude: -12.435546927175128
+<class 'numpy.ndarray'>
+Next location: [-12.43554693  -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [1.59887643 0.        ]
+Distance: 48.40112357
+v_free 2.672748153320379
+Loc_Magnitude: 3.089323389334945
+<class 'numpy.ndarray'>
+Next location: [3.08932339 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [-5.42072397 -0.        ]
+Distance: 55.42072397
+V_vector:  [2.47175385 0.        ]
+V_free: 2.605481142831555
+V_follow:  2.4717538478375856
+Loc_Magnitude: -4.0168755114895
+<class 'numpy.ndarray'>
+Next location: [-4.01687551 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-12.43554693  -0.        ]
+Distance: 62.43554693
+V_vector:  [2.29769825 0.        ]
+V_free: 2.554462661143118
+V_follow:  2.2976982486719804
+Loc_Magnitude: -11.104539957824233
+<class 'numpy.ndarray'>
+Next location: [-11.10453996  -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [3.08932339 0.        ]
+Distance: 46.91067661
+v_free 3.650435884386514
+Loc_Magnitude: 5.197051402568965
+<class 'numpy.ndarray'>
+Next location: [5.1970514 0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [-4.01687551 -0.        ]
+Distance: 54.01687551
+V_vector:  [3.40328712 0.        ]
+V_free: 3.428942536528088
+V_follow:  3.4032871242228193
+Loc_Magnitude: -2.0585285193131986
+<class 'numpy.ndarray'>
+Next location: [-2.05852852 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-11.10453996  -0.        ]
+Distance: 61.10453996
+V_vector:  [3.16921417 0.        ]
+V_free: 3.235655083447236
+V_follow:  3.1692141720267513
+Loc_Magnitude: -9.28223581976709
+<class 'numpy.ndarray'>
+Next location: [-9.28223582 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [5.1970514 0.       ]
+Distance: 44.8029486
+v_free 4.705565251687184
+Loc_Magnitude: 7.982385112024566
+<class 'numpy.ndarray'>
+Next location: [7.98238511 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [-2.05852852 -0.        ]
+Distance: 52.05852852
+V_vector:  [4.44363242 0.        ]
+V_free: 4.4419868279004575
+V_follow:  4.443632420498509
+Loc_Magnitude: 0.5565627973744256
+<class 'numpy.ndarray'>
+Next location: [0.5565628 0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-9.28223582 -0.        ]
+Distance: 59.28223582
+V_vector:  [4.18488401 0.        ]
+V_free: 4.190491291733062
+V_follow:  4.184884014058153
+Loc_Magnitude: -6.8308697579716995
+<class 'numpy.ndarray'>
+Next location: [-6.83086976 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [7.98238511 0.        ]
+Distance: 42.01761489
+v_free 5.810966767596902
+Loc_Magnitude: 11.487895783094695
+<class 'numpy.ndarray'>
+Next location: [11.48789578  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [0.5565628 0.       ]
+Distance: 49.4434372
+V_vector:  [5.54871124 0.        ]
+V_free: 5.537600906047634
+V_follow:  5.548711236077462
+Loc_Magnitude: 3.8830920446493633
+<class 'numpy.ndarray'>
+Next location: [3.88309204 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-6.83086976 -0.        ]
+Distance: 56.83086976
+V_vector:  [5.27578444 0.        ]
+V_free: 5.2692464898713585
+V_follow:  5.2757844403059035
+Loc_Magnitude: -3.679492925356829
+<class 'numpy.ndarray'>
+Next location: [-3.67949293 -0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [11.48789578  0.        ]
+Distance: 38.51210422
+v_free 6.940121424516671
+Loc_Magnitude: 15.738258510704526
+<class 'numpy.ndarray'>
+Next location: [15.73825851  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [3.88309204 0.        ]
+Distance: 46.11690796
+V_vector:  [6.68747372 0.        ]
+V_free: 6.663307526939282
+V_follow:  6.68747372258687
+Loc_Magnitude: 7.950061517662305
+<class 'numpy.ndarray'>
+Next location: [7.95006152 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [-3.67949293 -0.        ]
+Distance: 53.67949293
+V_vector:  [6.40799581 0.        ]
+V_free: 6.3900698844715
+V_follow:  6.4079958085661355
+Loc_Magnitude: 0.20694586144761917
+<class 'numpy.ndarray'>
+Next location: [0.20694586 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [15.73825851  0.        ]
+Distance: 34.26174149
+v_free 8.068570144606309
+Loc_Magnitude: 20.74115569970766
+<class 'numpy.ndarray'>
+Next location: [20.7411557  0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [7.95006152 0.        ]
+Distance: 42.04993848
+V_vector:  [7.83206639 1.60695811]
+V_free: 7.7940341365119625
+V_follow:  7.832066389033918
+Loc_Magnitude: 12.769175407817082
+<class 'numpy.ndarray'>
+Next location: [12.76917541  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [0.20694586 0.        ]
+Distance: 49.79305414
+V_vector:  [7.55272404 1.04954699]
+V_free: 7.521741403673486
+V_follow:  7.552724044658507
+Loc_Magnitude: 4.844216289381662
+<class 'numpy.ndarray'>
+Next location: [4.84421629 0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [20.7411557  0.       ]
+Distance: 29.2588443
+v_free 9.174937487512253
+Loc_Magnitude: 26.488991577372854
+<class 'numpy.ndarray'>
+Next location: [26.48899158  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [12.76917541  0.        ]
+Distance: 37.23082459
+V_vector:  [8.95860596 3.45277349]
+V_free: 8.907579048227468
+V_follow:  8.958605963705235
+Loc_Magnitude: 18.336379804913143
+<class 'numpy.ndarray'>
+Next location: [18.3363798  0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [4.84421629 0.        ]
+Distance: 45.15578371
+V_vector:  [8.68501055 3.04299642]
+V_free: 8.641284942505512
+V_follow:  8.685010552484826
+Loc_Magnitude: 10.231891738726333
+<class 'numpy.ndarray'>
+Next location: [10.23189174  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [26.48899158  0.        ]
+Distance: 23.51100842
+v_free 10.241551228436105
+Loc_Magnitude: 32.96115448531612
+<class 'numpy.ndarray'>
+Next location: [32.96115449  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [18.3363798  0.       ]
+Distance: 31.6636202
+V_vector:  [10.04758079  4.95775183]
+V_free: 9.985328865965421
+V_follow:  10.047580790971004
+Loc_Magnitude: 24.634015771397628
+<class 'numpy.ndarray'>
+Next location: [24.63401577  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [10.23189174  0.        ]
+Distance: 39.76810826
+V_vector:  [9.78421611 4.61005729]
+V_free: 9.729176247895259
+V_follow:  9.784216111868975
+Loc_Magnitude: 16.355378803466923
+<class 'numpy.ndarray'>
+Next location: [16.3553788  0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [32.96115449  0.        ]
+Distance: 17.03884551
+v_free 11.254685405472308
+Loc_Magnitude: 40.12656670130281
+<class 'numpy.ndarray'>
+Next location: [40.1265667  0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [24.63401577  0.        ]
+Distance: 25.36598423
+V_vector:  [11.0839289   6.27084209]
+V_free: 11.012588914135216
+V_follow:  11.083928902642228
+Loc_Magnitude: 31.633321696700214
+<class 'numpy.ndarray'>
+Next location: [31.6333217  0.       ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [16.3553788  0.       ]
+Distance: 33.6446212
+V_vector:  [10.83417011  5.96388086]
+V_free: 10.769762982069185
+V_follow:  10.834170110282574
+Loc_Magnitude: 23.18835854332148
+<class 'numpy.ndarray'>
+Next location: [23.18835854  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [40.1265667  0.       ]
+Distance: 9.873433300000002
+v_free 12.204488586276865
+Loc_Magnitude: 47.94629136391639
+<class 'numpy.ndarray'>
+Next location: [47.94629136  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [31.6333217  0.       ]
+Distance: 18.3666783
+V_vector:  [12.05684517  7.44079426]
+V_free: 11.978581477496498
+V_follow:  12.056845167595629
+Loc_Magnitude: 39.297045163877236
+<class 'numpy.ndarray'>
+Next location: [39.29704516  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [23.18835854  0.        ]
+Distance: 26.81164146
+V_vector:  [11.82303522  7.16628781]
+V_free: 11.75133670089497
+V_follow:  11.823035215763532
+Loc_Magnitude: 30.69539176765472
+<class 'numpy.ndarray'>
+Next location: [30.69539177  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+0
+Bi_location: [47.94629136  0.        ]
+Distance: 2.0537086400000035
+v_free 13.0846774772411
+Loc_Magnitude: 56.376013381172655
+<class 'numpy.ndarray'>
+Change angle
+Next location: [50  0]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [39.29704516  0.        ]
+Distance: 10.702954839999997
+V_vector:  [11.4619805   8.48952505]
+V_free: 12.87618895856471
+V_follow:  11.461980501460278
+Loc_Magnitude: 47.110565819652265
+<class 'numpy.ndarray'>
+Next location: [47.11056582  0.        ]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [30.69539177  0.        ]
+Distance: 19.30460823
+V_vector:  [11.35363647  6.329232  ]
+V_free: 12.665929951046355
+V_follow:  11.353636467200403
+Loc_Magnitude: 38.39704949269846
+<class 'numpy.ndarray'>
+Next location: [38.39704949  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [50  0]
+Distance: 130.0
+v_free 13.89207940763682
+Loc_Magnitude: 8.992252294959309
+<class 'numpy.ndarray'>
+Next location: [0.         8.99225229]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+1
+Bi_location: [47.11056582  0.        ]
+Distance: 2.889434180000002
+V_vector:  [ 0.         11.91629288]
+V_free: 12.397410654141856
+V_follow:  0.0
+Loc_Magnitude: 50.931225987153425
+<class 'numpy.ndarray'>
+Change angle
+Next location: [50  0]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [38.39704949  0.        ]
+Distance: 11.60295051
+V_vector:  [1.48872039 0.        ]
+V_free: 12.296637070957267
+V_follow:  1.4887203866373637
+Loc_Magnitude: 42.677835107945924
+<class 'numpy.ndarray'>
+Next location: [42.67783511  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [0.         8.99225229]
+Distance: 130.930802356997
+v_free 14.626099305618926
+Loc_Magnitude: 18.49831186108525
+<class 'numpy.ndarray'>
+Next location: [ 0.         18.49831186]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [50  0]
+Distance: 130.0
+V_vector:  [ 0.         15.45392173]
+V_free: 0.44798933519052037
+V_follow:  15.453921730159166
+Loc_Magnitude: 0.1493297783968432
+<class 'numpy.ndarray'>
+Next location: [0.         0.14932978]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [42.67783511  0.        ]
+Distance: 7.322164890000003
+V_vector:  [0. 0.]
+V_free: 2.3156641596882483
+V_follow:  0.0
+Loc_Magnitude: 43.17407523887912
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.         18.49831186]
+Distance: 122.19912625739113
+v_free 15.288172169336914
+Loc_Magnitude: 28.46973568498528
+<class 'numpy.ndarray'>
+Next location: [ 0.         28.46973568]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [0.         0.14932978]
+Distance: 139.14451680387265
+V_vector:  [12.16449949 17.75425531]
+V_free: 1.0510289306192975
+V_follow:  17.75425530764367
+Loc_Magnitude: 0.6490025352699392
+<class 'numpy.ndarray'>
+Next location: [0.         0.64900254]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0. 0.]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.         28.46973568]
+Distance: 113.1741780305431
+v_free 15.881244984178066
+Loc_Magnitude: 38.85954139783833
+<class 'numpy.ndarray'>
+Next location: [ 0.        38.8595414]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [0.         0.64900254]
+Distance: 138.67833480359118
+V_vector:  [12.78433859 19.78700476]
+V_free: 1.7985927246844566
+V_follow:  19.787004760580754
+Loc_Magnitude: 1.5988764251012513
+<class 'numpy.ndarray'>
+Next location: [0.         1.59887643]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0. 0.]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.        38.8595414]
+Distance: 103.95471703495862
+v_free 16.40931570806807
+Loc_Magnitude: 49.62306163074871
+<class 'numpy.ndarray'>
+Next location: [ 0.         49.62306163]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [0.         1.59887643]
+Distance: 137.7927738817911
+V_vector:  [13.32037001 21.59795509]
+V_free: 2.672748153320379
+V_follow:  21.59795509011625
+Loc_Magnitude: 3.089323389334945
+<class 'numpy.ndarray'>
+Next location: [0.         3.08932339]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0. 0.]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.         49.62306163]
+Distance: 94.65966523147428
+v_free 16.877043219620056
+Loc_Magnitude: 60.71851460589605
+<class 'numpy.ndarray'>
+Next location: [ 0.         60.71851461]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [0.         3.08932339]
+Distance: 136.40498465088436
+V_vector:  [13.78064769 23.21655916]
+V_free: 3.650435884386514
+V_follow:  23.216559159413176
+Loc_Magnitude: 5.197051402568965
+<class 'numpy.ndarray'>
+Next location: [0.        5.1970514]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0.         0.96385412]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.         60.71851461]
+Distance: 85.43959397050517
+v_free 17.289431763456328
+Loc_Magnitude: 72.1073396043588
+<class 'numpy.ndarray'>
+Next location: [ 0.        72.1073396]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [0.        5.1970514]
+Distance: 134.44618246441303
+V_vector:  [14.17324469 24.66399699]
+V_free: 4.705565251687184
+V_follow:  24.66399699155012
+Loc_Magnitude: 7.982385112024566
+<class 'numpy.ndarray'>
+Next location: [0.         7.98238511]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0.         3.95782025]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.        72.1073396]
+Distance: 76.49549090103108
+v_free 17.651586408799307
+Loc_Magnitude: 83.75434565741855
+<class 'numpy.ndarray'>
+Next location: [ 0.         83.75434566]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [0.         7.98238511]
+Distance: 131.86469710822664
+V_vector:  [14.50604895 25.95696387]
+V_free: 5.810966767596902
+V_follow:  25.956963871996653
+Loc_Magnitude: 11.487895783094695
+<class 'numpy.ndarray'>
+Next location: [ 0.         11.48789578]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0.         6.38973341]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.         83.75434566]
+Distance: 68.10771281826135
+v_free 17.968531884223818
+Loc_Magnitude: 95.62771842434104
+<class 'numpy.ndarray'>
+Next location: [ 0.         95.62771842]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         11.48789578]
+Distance: 128.6278307624448
+V_vector:  [14.78659255 27.1095898 ]
+V_free: 6.940121424516671
+V_follow:  27.109589796003554
+Loc_Magnitude: 15.738258510704526
+<class 'numpy.ndarray'>
+Next location: [ 0.         15.73825851]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [0.         8.64816505]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [ 0.         95.62771842]
+Distance: 60.67498447478011
+v_free 18.24508520304197
+Loc_Magnitude: 107.69892411575526
+<class 'numpy.ndarray'>
+Next location: [  0.         107.69892412]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         15.73825851]
+Distance: 124.72267463588003
+V_vector:  [15.02191818 28.13444667]
+V_free: 8.068570144606309
+V_follow:  28.134446667808586
+Loc_Magnitude: 20.74115569970766
+<class 'numpy.ndarray'>
+Next location: [ 0.        20.7411557]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         10.81570027]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         107.69892412]
+Distance: 54.74794960001258
+v_free 18.48577208608309
+Loc_Magnitude: 119.94254321637501
+<class 'numpy.ndarray'>
+Next location: [  0.         119.94254322]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.        20.7411557]
+Distance: 120.15612784112028
+V_vector:  [15.21848486 29.04307557]
+V_free: 9.174937487512253
+V_follow:  29.043075573395107
+Loc_Magnitude: 26.488991577372854
+<class 'numpy.ndarray'>
+Next location: [ 0.         26.48899158]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         12.91567886]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         119.94254322]
+Distance: 51.00149445733496
+v_free 18.694777750755893
+Loc_Magnitude: 132.33605983227966
+<class 'numpy.ndarray'>
+Next location: [  0.         132.33605983]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         26.48899158]
+Distance: 114.95446430706947
+V_vector:  [15.38211198 29.84625054]
+V_free: 10.241551228436105
+V_follow:  29.84625054359509
+Loc_Magnitude: 32.96115448531612
+<class 'numpy.ndarray'>
+Next location: [ 0.         32.96115449]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         14.95304836]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         132.33605983]
+Distance: 50.054542006988136
+v_free 18.875923726243794
+Loc_Magnitude: 144.8596269889999
+<class 'numpy.ndarray'>
+Next location: [  0.         144.85962699]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         32.96115449]
+Distance: 109.16289451051418
+V_vector:  [15.51795794 30.55409636]
+V_free: 11.254685405472308
+V_follow:  30.55409635835656
+Loc_Magnitude: 40.12656670130281
+<class 'numpy.ndarray'>
+Next location: [ 0.        40.1265667]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         16.92664262]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         144.85962699]
+Distance: 52.161369942534456
+v_free 19.03266366282454
+Loc_Magnitude: 157.49582278635611
+<class 'numpy.ndarray'>
+Next location: [  0.         157.49582279]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.        40.1265667]
+Distance: 102.84568057594616
+V_vector:  [15.63052827 31.17612819]
+V_free: 12.204488586276865
+V_follow:  31.176128191433385
+Loc_Magnitude: 47.94629136391639
+<class 'numpy.ndarray'>
+Next location: [ 0.         47.94629136]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         18.83384155]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         157.49582279]
+Distance: 57.061548094133265
+v_free 19.168092427005618
+Loc_Magnitude: 170.22940815327672
+<class 'numpy.ndarray'>
+Next location: [  0.         170.22940815]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         47.94629136]
+Distance: 96.08751792807435
+V_vector:  [15.7237064 31.7212535]
+V_free: 13.0846774772411
+V_follow:  31.721253499672137
+Loc_Magnitude: 56.376013381172655
+<class 'numpy.ndarray'>
+Next location: [ 0.         56.37601338]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         20.67247025]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         170.22940815]
+Distance: 64.17480253260845
+v_free 19.284963996288138
+Loc_Magnitude: 183.04709362443126
+<class 'numpy.ndarray'>
+Next location: [  0.         183.04709362]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         56.37601338]
+Distance: 88.99714268347012
+V_vector:  [15.80080069 32.19776024]
+V_free: 13.89207940763682
+V_follow:  32.197760243370496
+Loc_Magnitude: 65.3682656749593
+<class 'numpy.ndarray'>
+Next location: [ 0.         65.36826567]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         22.44150448]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         183.04709362]
+Distance: 72.89714769131263
+v_free 19.385714730504656
+Loc_Magnitude: 195.93731986226427
+<class 'numpy.ndarray'>
+Next location: [  0.         195.93731986]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         65.36826567]
+Distance: 81.7145096204077
+V_vector:  [15.86460111 32.61330523]
+V_free: 14.626099305618926
+V_follow:  32.613305230312946
+Loc_Magnitude: 74.87432524108524
+<class 'numpy.ndarray'>
+Next location: [ 0.         74.87432524]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         24.14121367]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         195.93731986]
+Distance: 82.75101298666954
+v_free 19.47248948249375
+Loc_Magnitude: 208.89005459766614
+<class 'numpy.ndarray'>
+Next location: [  0.        208.8900546]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         74.87432524]
+Distance: 74.42338354136622
+V_vector:  [15.91744035 32.97490974]
+V_free: 15.288172169336914
+V_follow:  32.97490974142792
+Loc_Magnitude: 84.84574906498528
+<class 'numpy.ndarray'>
+Next location: [ 0.         84.84574906]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         25.77303898]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.        208.8900546]
+Distance: 93.40043209102934
+v_free 19.547168724477885
+Loc_Magnitude: 221.89660733565722
+<class 'numpy.ndarray'>
+Next location: [  0.         221.89660734]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         84.84574906]
+Distance: 67.37140623404332
+V_vector:  [15.96125506 33.28896533]
+V_free: 15.881244984178066
+V_follow:  33.288965331596806
+Loc_Magnitude: 95.23555477783833
+<class 'numpy.ndarray'>
+Next location: [ 0.         95.23555478]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         27.33936083]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         221.89660734]
+Distance: 104.61828922612978
+v_free 19.611395425429127
+Loc_Magnitude: 234.94946205663567
+<class 'numpy.ndarray'>
+Next location: [  0.         234.94946206]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [ 0.         95.23555478]
+Distance: 60.898002031711854
+V_vector:  [15.99764407 33.56125005]
+V_free: 16.40931570806807
+V_follow:  33.56125004770288
+Loc_Magnitude: 105.99907501074871
+<class 'numpy.ndarray'>
+Next location: [  0.         105.99907501]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         28.84323903]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         234.94946206]
+Distance: 116.25140681593226
+v_free 19.666600841671432
+Loc_Magnitude: 248.04212748236685
+<class 'numpy.ndarray'>
+Next location: [  0.         248.04212748]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         105.99907501]
+Distance: 55.46209877362744
+V_vector:  [16.02792179 33.79695383]
+V_free: 16.877043219620056
+V_follow:  33.796953833675836
+Loc_Magnitude: 117.09452798589604
+<class 'numpy.ndarray'>
+Next location: [  0.         117.09452799]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         30.28816888]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         248.04212748]
+Distance: 128.19494475214134
+v_free 19.714028701515375
+Loc_Magnitude: 261.1690039943956
+<class 'numpy.ndarray'>
+Next location: [  0.         261.16900399]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         117.09452799]
+Distance: 51.63866001167045
+V_vector:  [16.05316568 34.00071115]
+V_free: 17.289431763456328
+V_follow:  34.00071115282705
+Loc_Magnitude: 128.4833529843588
+<class 'numpy.ndarray'>
+Next location: [  0.         128.48335298]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.        31.6778735]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         261.16900399]
+Distance: 140.37559477248402
+v_free 19.75475749675768
+Loc_Magnitude: 274.32526605609104
+<class 'numpy.ndarray'>
+Next location: [  0.         274.32526606]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         128.48335298]
+Distance: 50.022996893261755
+V_vector:  [16.0742574  34.17663868]
+V_free: 17.651586408799307
+V_follow:  34.1766386794237
+Loc_Magnitude: 140.13035903741854
+<class 'numpy.ndarray'>
+Next location: [  0.         140.13035904]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.         33.01613904]
+V_free: 0.44798933519052037
+V_follow:  0.0
+Loc_Magnitude: 43.17407524
+<class 'numpy.ndarray'>
+Next location: [43.17407524  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         274.32526606]
+Distance: 152.74089964148365
+v_free 19.78972075853464
+Loc_Magnitude: 287.5067588117641
+<class 'numpy.ndarray'>
+Next location: [  0.         287.50675881]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         140.13035904]
+Distance: 51.0159207922322
+V_vector:  [16.09191793 34.32837599]
+V_free: 17.968531884223818
+V_follow:  34.32837598762247
+Loc_Magnitude: 152.00373180434104
+<class 'numpy.ndarray'>
+Next location: [  0.        152.0037318]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.17407524  0.        ]
+Distance: 6.8259247599999995
+V_vector:  [ 0.95846323 34.30669182]
+V_free: 0.44798933519052037
+V_follow:  0.9584632299101665
+Loc_Magnitude: 43.32340501839684
+<class 'numpy.ndarray'>
+Next location: [43.32340502  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         287.50675881]
+Distance: 165.2524706950898
+v_free 19.819725308293595
+Loc_Magnitude: 300.70990749894275
+<class 'numpy.ndarray'>
+Next location: [  0.        300.7099075]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.        152.0037318]
+Distance: 54.627504181742836
+V_vector:  [16.10673697 34.45912748]
+V_free: 18.24508520304197
+V_follow:  34.45912748429891
+Loc_Magnitude: 164.07493749575525
+<class 'numpy.ndarray'>
+Next location: [  0.        164.0749375]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.32340502  0.        ]
+Distance: 6.676594979999997
+V_vector:  [ 2.09355249 35.53968518]
+V_free: 1.0510289306192975
+V_follow:  2.0935524899906666
+Loc_Magnitude: 43.823077775269944
+<class 'numpy.ndarray'>
+Next location: [43.82307778  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.        300.7099075]
+Distance: 177.88162501691554
+v_free 19.84546754949997
+Loc_Magnitude: 313.93163845259784
+<class 'numpy.ndarray'>
+Next location: [  0.         313.93163845]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.        164.0749375]
+Distance: 60.507035670481386
+V_vector:  [16.11919733 34.57170411]
+V_free: 18.48577208608309
+V_follow:  34.5717041092912
+Loc_Magnitude: 176.31855659637503
+<class 'numpy.ndarray'>
+Next location: [  0.        176.3185566]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [43.82307778  0.        ]
+Distance: 6.176922220000002
+V_vector:  [ 2.59543389 36.728245  ]
+V_free: 1.7985927246844566
+V_follow:  2.5954338928459117
+Loc_Magnitude: 44.77295166510125
+<class 'numpy.ndarray'>
+Next location: [44.77295167  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         313.93163845]
+Distance: 190.60652565665615
+v_free 19.867547912367687
+Loc_Magnitude: 327.16931027062253
+<class 'numpy.ndarray'>
+Next location: [  0.         327.16931027]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.        176.3185566]
+Distance: 68.15723501952968
+V_vector:  [16.12969495 34.66856375]
+V_free: 18.694777750755893
+V_follow:  34.66856374607099
+Loc_Magnitude: 188.71207321227965
+<class 'numpy.ndarray'>
+Next location: [  0.         188.71207321]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [44.77295167  0.        ]
+Distance: 5.227048330000002
+V_vector:  [ 2.60601546 37.87609358]
+V_free: 2.672748153320379
+V_follow:  2.606015458494867
+Loc_Magnitude: 46.24115439772644
+<class 'numpy.ndarray'>
+Next location: [46.2411544  0.       ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         327.16931027]
+Distance: 203.41026747032097
+v_free 19.88648359031336
+Loc_Magnitude: 340.42065410422697
+<class 'numpy.ndarray'>
+Next location: [  0.        340.4206541]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         188.71207321]
+Distance: 77.11749179412152
+V_vector:  [16.13855521 34.75184954]
+V_free: 18.875923726243794
+V_follow:  34.75184954074551
+Loc_Magnitude: 201.2356403689999
+<class 'numpy.ndarray'>
+Next location: [  0.         201.23564037]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [46.2411544  0.       ]
+Distance: 3.758845600000001
+V_vector:  [ 2.11057414 38.98866561]
+V_free: 3.5770922253672017
+V_follow:  2.110574135094037
+Loc_Magnitude: 47.813350931196304
+<class 'numpy.ndarray'>
+Next location: [47.81335093  0.        ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.        340.4206541]
+Distance: 216.27956831811886
+v_free 19.902719719013465
+Loc_Magnitude: 353.6837218697756
+<class 'numpy.ndarray'>
+Next location: [  0.         353.68372187]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         201.23564037]
+Distance: 87.0316980124137
+V_vector:  [16.14604616 34.82342565]
+V_free: 19.03266366282454
+V_follow:  34.82342564707551
+Loc_Magnitude: 213.8718361663561
+<class 'numpy.ndarray'>
+Next location: [  0.         213.87183617]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [47.81335093  0.        ]
+Distance: 2.1866490700000014
+V_vector:  [ 1.72149737 40.10507775]
+V_free: 3.0261979831489736
+V_follow:  1.7214973718127555
+Loc_Magnitude: 49.09070809896893
+<class 'numpy.ndarray'>
+Next location: [49.0907081  0.       ]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         353.68372187]
+Distance: 229.2038556168188
+v_free 19.916639151395238
+Loc_Magnitude: 366.9568414934696
+<class 'numpy.ndarray'>
+Next location: [  0.         366.95684149]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         213.87183617]
+Distance: 97.64468701638262
+V_vector:  [16.15238925 34.88491011]
+V_free: 19.168092427005618
+V_follow:  34.884910109174164
+Loc_Magnitude: 226.6054215332767
+<class 'numpy.ndarray'>
+Next location: [  0.         226.60542153]
+------------------------------------------------------------
+['a', 'b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140124162691504
+2
+Bi_location: [49.0907081  0.       ]
+Distance: 0.9092918999999995
+V_vector:  [ 1.42090092 41.18827363]
+V_free: 2.584508100790506
+V_follow:  1.4209009237925243
+Loc_Magnitude: 50.1381741985351
+<class 'numpy.ndarray'>
+Change angle
+Next location: [50  0]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+0
+Bi_location: [  0.         366.95684149]
+Distance: 242.17461619442486
+v_free 19.928570977933045
+Loc_Magnitude: 380.2385781997761
+<class 'numpy.ndarray'>
+Next location: [  0.        380.2385782]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+1
+Bi_location: [  0.         226.60542153]
+Distance: 108.77778941028811
+V_vector:  [16.1577679  34.93770478]
+V_free: 19.284963996288138
+V_follow:  34.93770477695298
+Loc_Magnitude: 239.42310700443124
+<class 'numpy.ndarray'>
+Next location: [  0.       239.423107]
+------------------------------------------------------------
+['b', 'c', 'f', 'e']
+<generator object Gipps_vehicle.update_test.<locals>.<genexpr> at 0x7f70e4569510>
+140123953535664
+2
+Bi_location: [50  0]
+Distance: 130.0
+V_vector:  [ 1.32098857 42.24117981]
+V_free: 2.2365997002799554
+V_follow:  42.24117980703327
+Loc_Magnitude: 1.2191668746908295
+<class 'numpy.ndarray'>
+Next location: [0.         1.21916687]

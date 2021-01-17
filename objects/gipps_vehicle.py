@@ -1,6 +1,7 @@
 from objects.vehicle import Vehicle
 from numpy import random
 import numpy as np
+from math import dist, sqrt
 
 
 class Gipps_vehicle(Vehicle):
@@ -13,6 +14,7 @@ class Gipps_vehicle(Vehicle):
         positions,
         directions,
         gipps,
+        street,
         leader=None,
         reaction_time=2 / 3,
         randomness=False,
@@ -38,6 +40,7 @@ class Gipps_vehicle(Vehicle):
             max_speed=desired_speed,
             miniGap=miniGap,
             length=length,
+            path=path
         )
 
         self.max_acc = max_acc
@@ -50,23 +53,38 @@ class Gipps_vehicle(Vehicle):
         self.model = gipps
         self.count = 0
         self.graph = graph
-        self.path = path
         self.positions = positions
         self.directions = directions
-        self.graph = graph
         self.direction = "Right"
+        self.street = street
+        self.edges = self.group_edges()
 
     # Check for influence
+    def get_distance(self,p1,p2):
+        return sqrt((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2)
+
     def pick_normal(self, mean, std):
         pick = random.normal(mean, std)
         while pick > mean + std or pick < mean - std:
             pick = random.normal(mean, std)
         return pick
 
-    def print_info(location_magnitude, xy):
+    def print_info(self, location_magnitude, xy):
         print("Magnitude:", location_magnitude)
         print("X:", xy[0])
         print("Y:", xy[1])
+
+    # Generate a dictionary edges:angle
+    def group_edges(self):
+        print("Here:",len(self.street.streets))
+        edges = {}
+        for i in range(len(self.street.streets)):
+            edges[self.street.streets[i].edge] = self.street.streets[i].angle
+        return edges
+
+    def find_angle(self,p1,p2):
+        angle = self.edges[(p1,p2)]
+        return angle
 
     def update(self):  # Basic update only in X axis
         self.list_update()
@@ -87,59 +105,46 @@ class Gipps_vehicle(Vehicle):
         self.speed = new_speed
         self.location = new_location
 
-    def update_x_negative(self):
-        new_speed = self.model.get_speed(self)
-        new_acceleration = (new_speed - self.speed) / self.reac_time
-        # Euler integration method
-        new_location = self.location + 0.5 * (self.speed + new_speed) * self.reac_time
-        self.acceleration = new_acceleration
-        self.speed = new_speed
-        difference = new_location - self.location
-        self.location = self.location - difference
-
-    def update_y_negative(self):
-        new_speed = self.model.get_speed_y(self)
-        new_acceleration = (new_speed - self.speed) / self.reac_time
-        new_location_y = (
-            self.y_location + 0.5 * (self.speed + new_speed) * self.reac_time
-        )
-        self.acceleration = new_acceleration
-        self.speed = new_speed
-        difference = new_location_y - self.location
-        self.y_location = self.location - difference
-
-    def update_bidimensional(self):
+    def update_test(self): # Update in two dimensions
         self.list_update()
-        self.bi_location = np.array([self.location, self.y_location])
-        for node in self.path:
-            if self.location > self.positions[node][0]:
-                print("Up")
-                self.direction = "Up"
-            elif self.y_location > self.positions[node][1]:
-                print("right")
-                self.direction = "Right"
-
-        if self.direction == "Right":
-            self.update_x()
-        elif self.direction == "Up":
-            self.update_y()
-
-    def update_test(self):
-        self.list_update()
+        print("------------------------------------------------------------")
+        print("Vehicle path", self.path)
+        # Distance between vehicle and next node
+        distance = self.get_distance(self.bi_location, self.positions[self.path[0]])
+        check = self.positions[self.path[0]]
+        print(self.ith)
+        print("Bi_location:", self.bi_location)
+        print("Distance:",distance)
+        last_location = self.bi_location
         new_location = np.empty(2, dtype=float)
-        new_speed = self.model.get_speed_test(self)
+        new_speed = self.model.get_speed_xy(self)
+        new_speed_x = new_speed * np.cos(np.deg2rad(self.angle))
+        new_speed_y = new_speed * np.sin(np.deg2rad(self.angle))
+        speed_x = self.speed * np.cos(np.deg2rad(self.angle))
+        speed_y = self.speed * np.sin(np.deg2rad(self.angle))
+        print("x", new_speed_x)
+        print("y", new_speed_y)
+        print("xnow", speed_x)
+        print("ynow", speed_y)
         new_acceleration = (new_speed - self.speed) / self.reac_time
         x_component = (
-            self.bi_location[0] + 0.5 * (self.speed + new_speed) * self.reac_time
+            self.bi_location[0] + 0.5 * (speed_x + new_speed_x) * self.reac_time
         )
         y_component = (
-            self.bi_location[1] + 0.5 * (self.speed + new_speed) * self.reac_time
+            self.bi_location[1] + 0.5 * (speed_y + new_speed_y) * self.reac_time
         )
-        location_mag = (x_component * np.cos(np.deg2rad(self.angle))) + (
-            y_component * np.sin(np.deg2rad(self.angle))
-        )
-        new_location[0] = np.round(location_mag * np.cos(np.deg2rad(self.angle)), 8)
-        new_location[1] = np.round(location_mag * np.sin(np.deg2rad(self.angle)), 8)
+        new_location[0] = x_component
+        new_location[1] = y_component
         self.acceleration = new_acceleration
         self.speed = new_speed
         self.bi_location = new_location
+        dist_locations = self.get_distance(self.bi_location,last_location)
+        if distance < dist_locations:
+            if len(self.path) != 1:
+                new_angle = self.edges[self.path[0], self.path[1]]
+                print("Change angle")
+                self.bi_location = np.array([check[0],check[1]])
+                self.angle = new_angle
+                #self.angle = 270.0
+                self.path.pop(0)
+        print("Next location:",self.bi_location)

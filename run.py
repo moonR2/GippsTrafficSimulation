@@ -10,8 +10,8 @@ wiht bracking vehicle. Also saves the data in a log.txt file. If you want an
 animation for the simulation run animation.py 
 """
 # Simulation parameters 
-simulation_time = 20  
-n = 5
+simulation_time = 120  
+n = 3
 intended_speed = (80 * 1000)/3600 
 sim = Simulation(time = simulation_time, avStep = 100)
 # Colors of vehicles  

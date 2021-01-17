@@ -29,7 +29,6 @@ class Simulation:
                 ith=i,
                 desired_speed=desired_speed,
                 gipps=self.gipps,
-                y_location=y_location,
                 leader=leader,
                 reaction_time=reac_time,
                 randomness=randomness,
@@ -55,74 +54,23 @@ class Simulation:
         p.run(new_loop_num)
         return p
 
-    def rung_gipps_graph(
+    def run_xy(
         self,
         n,
         desired_speed,
-        y_location,
         graph,
         positions,
+        street,
         randomness=False,
         reac_time=2 / 3,
     ):
         loop_num = self.get_gipps_loop_num(self.time, reac_time)
         plat = Platoon()
         leader = None
-        path = nx.shortest_path(graph, source="a", target="f")
-        directions = []
-        path_locations = []
-        for node in range(0, len(path) - 1):
-            node1 = positions[path[node]]
-            node2 = positions[path[node + 1]]
-            path_locations.append((node1, node2))
-            if node2[1] - node1[1] > 0 and node2[0] - node1[0] == 0:
-                directions.append("Up")
-            if node2[1] - node1[1] == 0 and node2[0] - node1[0] > 0:
-                directions.append("Right")
-        for i in range(n):
-            newcar = Gipps_vehicle(
-                ith=i,
-                desired_speed=desired_speed,
-                gipps=self.gipps,
-                y_location=y_location,
-                graph=graph,
-                path=path,
-                positions=positions,
-                directions=directions,
-                leader=leader,
-                reaction_time=reac_time,
-                randomness=randomness,
-                length=5,
-            )
-            plat.add_vehicle(newcar)
-            leader = newcar
-        plat.run_bidimensional(loop_num)
-        return plat
-
-    def run_test(
-        self,
-        n,
-        desired_speed,
-        graph,
-        positions,
-        randomness=False,
-        reac_time=2 / 3,
-    ):
-        loop_num = self.get_gipps_loop_num(self.time, reac_time)
-        plat = Platoon()
-        leader = None
-        path = nx.shortest_path(graph, source="a", target="f")
+        path = nx.shortest_path(graph, source="a", target="d")
         directions = []
         path_locations = []
         # Creating vehicle directions to their path
-        for node in range(0, len(path) - 1):
-            node1 = positions[path[node]]
-            node2 = positions[path[node + 1]]
-            path_locations.append((node1, node2))
-            if node2[1] - node1[1] > 0 and node2[0] - node1[0] == 0:
-                directions.append("Up")
-            if node2[1] - node1[1] == 0 and node2[0] - node1[0] > 0:
-                directions.append("Right")
         for i in range(n):
             newcar = Gipps_vehicle(
                 ith=i,
@@ -132,6 +80,7 @@ class Simulation:
                 path=path,
                 positions=positions,
                 directions=directions,
+                street = street,
                 leader=leader,
                 reaction_time=reac_time,
                 randomness=randomness,

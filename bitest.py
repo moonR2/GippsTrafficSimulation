@@ -1,25 +1,27 @@
 import matplotlib.pyplot as plt
 from simulation import Simulation
+from objects.road import road, street
 import numpy as np
 import sys
 import networkx as nx
 
 # Parameters needed for simulation
-simulation_time = 30
-n = 5
+simulation_time = 45
+n = 3
 intended_speed = (80 * 1000) / 3600  # 22,22
 sim = Simulation(time=simulation_time, avStep=100)
 colors = ["red", "blue", "black", "green", "pink"]
+streets = []
 
 if sim:
     # Dictionary handling the coordinates of each edge
     pos = {
-        "a": (60, 10),
-        "b": (60, 140),
-        "c": (190, 140),
-        "d": (190, 10),
-        "e": (320, 10),
-        "f": (320, 140),
+        "a": (50, 0),
+        "b": (50, 130),
+        "c": (180, 130),
+        "d": (180, 0),
+        "e": (310, 0),
+        "f": (310, 130),
     }
     # Getting the start of the road from the graph
     positions = list(pos.values())
@@ -36,19 +38,38 @@ if sim:
     for d, p in pos.items():
         graph.nodes[d]["pos"] = p
 
-    graph.add_edge("a", "b")
-    graph.add_edge("b", "c")
-    graph.add_edge("c", "d")
-    graph.add_edge("d", "a")
-    graph.add_edge("e", "d")
-    graph.add_edge("f", "e")
-    graph.add_edge("c", "f")
+    edges_list = [
+        ("a","b"),
+        ("a", "c"),
+        ("b","c"),
+        #("c","d"),
+        ("e","c"),
+        ("d","a"),
+        ("e","d"),
+        ("f","e"),
+        ("c","f")
+    ]
+    graph.add_edges_from(edges_list)
 
-    a_route = nx.shortest_path(graph, "a", "e")
+    # Testing road class 
+    st = street()
+    for i in range(len(edges_list)):
+        new_road = road(edges_list[i],pos,i)
+        st.add_street(new_road)
+
+    for i in range(len(edges_list)):
+        print(st.streets[i].ith)
+        print("Nodes: ",st.streets[i].nodes)
+        print(st.streets[i].edge)
+        print(st.streets[i].start)
+        print(st.streets[i].end)
+        print(st.streets[i].angle)
+
+    a_route = nx.shortest_path(graph, "a", "d")
     nx.draw(graph, pos, with_labels=True)
     nx.draw_networkx_edges(graph, pos)
-    g = sim.run_test(
-        n, intended_speed, graph, pos, randomness=False, reac_time=2 / 3
+    g = sim.run_xy(
+        n, intended_speed, graph, pos, st, randomness=False, reac_time=2 / 3
     )
     # Animation
     for i in range(len(g.platoon[0].lrecords)):
