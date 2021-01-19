@@ -12,7 +12,6 @@ class road():
         self.end = nodes[edge[1]]
         self.angle = self.get_angle()
         self.plat = []
-        #self.distance = self.get_distance()
 
     def get_angle(self):
         delta_x = self.end[0] - self.start[0]
@@ -20,8 +19,6 @@ class road():
         theta = atan2(delta_y, delta_x)
         return rad2deg(theta)
     
-    #def get_distance(self):
-
 # Class storing all the roads in the graph
 class street():
     def __init__(self):

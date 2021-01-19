@@ -58,12 +58,11 @@ if sim:
         st.add_street(new_road)
 
     for i in range(len(edges_list)):
-        print(st.streets[i].ith)
+        print("ID:",st.streets[i].ith)
         print("Nodes: ",st.streets[i].nodes)
-        print(st.streets[i].edge)
-        print(st.streets[i].start)
-        print(st.streets[i].end)
-        print(st.streets[i].angle)
+        print("Start: ",st.streets[i].start)
+        print("End: ",st.streets[i].end)
+        print("END---")
 
     a_route = nx.shortest_path(graph, "a", "d")
     nx.draw(graph, pos, with_labels=True)
@@ -98,5 +97,4 @@ if sim:
             # path = "images/test" + str(i) + ".png"
             # plt.savefig(path)
             plt.pause(0.01)
-
     plt.show()

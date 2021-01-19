@@ -7,14 +7,14 @@ from math import dist, sqrt
 class Gipps_vehicle(Vehicle):
     def __init__(
         self,
-        ith,
-        desired_speed,
+        ith, # Vehicle ID
+        desired_speed, # Vehicle desired speed
         graph,
         path,
         positions,
         directions,
         gipps,
-        street,
+        street, # Street class 
         leader=None,
         reaction_time=2 / 3,
         randomness=False,
@@ -55,9 +55,10 @@ class Gipps_vehicle(Vehicle):
         self.graph = graph
         self.positions = positions
         self.directions = directions
-        self.direction = "Right"
         self.street = street
-        self.edges = self.group_edges()
+        self.edges, self.road_ids = self.group_edges()
+        self.road_id = self.road_ids[(self.path[0],self.path[1])] # Assigning first road to road_id
+        self.first_road = self.road_ids[(self.path[0],self.path[1])] # Assigning first road to road_id
 
     # Check for influence
     def get_distance(self,p1,p2):
@@ -78,13 +79,11 @@ class Gipps_vehicle(Vehicle):
     def group_edges(self):
         print("Here:",len(self.street.streets))
         edges = {}
+        road_ids = {}
         for i in range(len(self.street.streets)):
             edges[self.street.streets[i].edge] = self.street.streets[i].angle
-        return edges
-
-    def find_angle(self,p1,p2):
-        angle = self.edges[(p1,p2)]
-        return angle
+            road_ids[self.street.streets[i].edge] = self.street.streets[i].ith
+        return edges, road_ids
 
     def update(self):  # Basic update only in X axis
         self.list_update()
@@ -139,12 +138,32 @@ class Gipps_vehicle(Vehicle):
         self.speed = new_speed
         self.bi_location = new_location
         dist_locations = self.get_distance(self.bi_location,last_location)
+        for i in range(len(self.street.streets)):
+            print("Roads ---", self.street.streets[i].ith)
+            print(self.street.streets[i].plat)
         if distance < dist_locations:
             if len(self.path) != 1:
+                last_road = self.road_id
+                print("Last road:",last_road)
                 new_angle = self.edges[self.path[0], self.path[1]]
+                new_road_id = self.road_ids[self.path[0],self.path[1]]
                 print("Change angle")
+                # New vehicle location is the same as the street node
                 self.bi_location = np.array([check[0],check[1]])
+                # Change angle to the new road angle
                 self.angle = new_angle
-                #self.angle = 270.0
+                self.road_id = new_road_id
+                # Pop the first element from the vehicle optimal path
                 self.path.pop(0)
+                print(self.street.streets[self.road_id].ith)
+                self.street.streets[self.road_id].plat.append(self.ith)
+                # When vehicle change direction remove itself from the last road
+                if self.ith in self.street.streets[last_road].plat and self.road_id != self.first_road:
+                    self.street.streets[last_road].plat.remove(self.ith)
+                if self.follower:
+                    #self.follower.ith.leader == None
+                    print("Vehicle follower:", self.follower.ith)
+
         print("Next location:",self.bi_location)
+        #print(self.street.streets[self.road_id].plat)
+        print("Car in road:", self.road_id)

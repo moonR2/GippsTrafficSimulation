@@ -30,7 +30,6 @@ class Vehicle:
         self.angle = 0.0
         self.path = deepcopy(path)
 
-
     def set_leader(self, leader):
         self.leader = leader
         if leader:
