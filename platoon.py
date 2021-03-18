@@ -9,9 +9,11 @@ class Platoon:
         self.platoon = []  # list handling every vehicle (AKA platoon)
         self.lrecords = []  # [Acceleration, Speed, Location, Headway)
         self.ltime = []  # Simulation time for every vehicle
-        self.delays = []  # Not being use atm
+        self.speedPass = []  # Not being use atm
+        self.delays = []
         self.vehPass = 0  # Number of vehicles that has pass certain point
         self.position = []  # Tuple (x,y) of every vehicle
+        self.sizes = []
 
     def add_vehicle(self, car):
         self.platoon.append(car)
@@ -67,6 +69,7 @@ class Platoon:
             indexLoc = self.platoon[idx].ltime.index(lastUpdate)
             idxLoc = self.platoon[idx].lrecords[indexLoc][2]
             self.lrecords.append(self.platoon[idx].lrecords)  # List for test purposes
-            if idxLoc > 0:
+            if idxLoc > 375:
                 # count vehicle passing
                 self.vehPass += 1
+        

@@ -12,6 +12,7 @@ class road():
         self.end = nodes[edge[1]]
         self.angle = self.get_angle()
         self.plat = []
+        self.vehicles = []
 
     def get_angle(self):
         delta_x = self.end[0] - self.start[0]

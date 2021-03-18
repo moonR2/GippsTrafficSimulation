@@ -43,7 +43,6 @@ class GippsModel:
         # Handling negatives values when there is no movement in X or Y
         for i in range(len(inner)):
             if inner[i] < 0:
-                print("Inner:",inner)
                 inner[i] = 0
         handler = car.desired_braking * car.reac_time + np.sqrt(inner)
         x = handler[0] * np.cos(np.deg2rad(car.angle))
@@ -90,18 +89,12 @@ class GippsModel:
         if car.leader:
             v_follow = self.decelerating_part_xy(car)
             v_follow = np.round(v_follow,8)
-            print("V_free:", v_free)
-            print("V_follow: ", v_follow)
-            print(np.minimum(v_free,v_follow))
             minimun = np.minimum(v_free,v_follow)
             v_follow_scalar = sqrt(v_follow[0] ** 2 + v_follow[1] ** 2)
             v_free_scalar = sqrt(v_free[0] ** 2 + v_free[1] ** 2)
-            print("V_free_scalar:", v_free_scalar)
-            print("V_follow_scalar: ", v_follow_scalar)
             if minimun[0] - v_free[0] == 0 and minimun[1] - v_free[1] == 0:
                 return v_free_scalar
             else:
                 return v_follow_scalar
         v_free_scalar = sqrt(v_free[0] ** 2 + v_free[1] ** 2)
-        print("v_free_scalar", v_free_scalar)
         return v_free_scalar
