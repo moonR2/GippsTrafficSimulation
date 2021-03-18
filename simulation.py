@@ -67,8 +67,8 @@ class Simulation:
         loop_num = self.get_gipps_loop_num(self.time, reac_time)
         plat = Platoon()
         leader = None
-        #path = nx.shortest_path(graph, source="a", target="c2")
-        path = nx.shortest_path(graph,25,14)
+        path = nx.shortest_path(graph, source="a", target="b")
+        #path = nx.shortest_path(graph,25,14)
         directions = []
         path_locations = []
         # Creating vehicle directions to their path
