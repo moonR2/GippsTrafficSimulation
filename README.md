@@ -9,6 +9,7 @@ Now that the repository is on our desktop, we need to install the necessary depe
 * NumPy
 * Matplotlib
 * NetworkX
+
 There are different ways to install these dependencies. We recommend creating a Python virtual environment, to create a new virtual environment we can use the following code:
 ```bash
 python3  -m venv Gipps 
@@ -27,10 +28,11 @@ Now that we have everything ready to run the simulation or contribute to the pro
 python3  first.py
 ```
 However, before running each experiment a change is necessary for the simulation.py file. The file simulation.py contains the class called Simulation. This class is in charge of creating the different types of simulations; where each simulation is a method of the class. In the case of the simulation in two dimensions, the parameter path, contains the path ofthe vehicles.  It is important to change this parameter for each experiment; since the nodes passed to the shortestpath() function must exist in the street network. The following list describes the start and end node of each experiment:
-*First experiment:  The path of the vehicles goes from node *a* to node *b*.
-*Second experiment:  The path of the vehicles goes from node *a* to node *b*.
-*Third experiment:  The path of the vehicles goes from node *a* to node *c2*.
-*Fourth experiment:  The path of the vehicles goes from node *25* to node *14*.
+* First experiment:  The path of the vehicles goes from node *a* to node *b*.
+* Second experiment:  The path of the vehicles goes from node *a* to node *b*.
+* Third experiment:  The path of the vehicles goes from node *a* to node *c2*.
+* Fourth experiment:  The path of the vehicles goes from node *25* to node *14*.
+
 Of course, we can change or randomly generate the nodes to our liking, as long as the nodes exist in the graph. But to reproduce the results described in this project we must use the nodes listed above. The file platoon.py contains a class called Platoon. In this class, there are several lists in charge of saving the different information generated in the simulation. Finally, the folders model and objects contain different classes. Also, a custom simulation can be created easily. The first step is to build the street network, but it is also recommended to read the NetworkX documentation for creating more complex graphs.  Once the graph is created we need to create a street object with the edges and nodes from the graph.  Finally, we need to call the desired simulation by using the methods from the class Simulation; where its parameters are:
 * Number of vehicles.
 * Street network speed limit.
@@ -39,4 +41,5 @@ Of course, we can change or randomly generate the nodes to our liking, as long a
 * Street class.
 * A boolean indicating if you want the vehicle parameters to be generated randomly.
 * The reaction time of the drivers.
+
 Once the simulation is run, the vehicle data can be accessed through the platoon class. Matplotlib makes use of this data to be able to visualize the simulation. Any questions orproblems can be sent to the issues section.
